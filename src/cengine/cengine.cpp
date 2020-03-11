@@ -2,6 +2,7 @@
 
 static const luaL_Reg loadedlibs[] = {
     { LUA_LOADLIB_COMMON, luaopen_common },
+    { LUA_LOADLIB_OBJECT, luaopen_object },
     { NULL, NULL },
 };
 

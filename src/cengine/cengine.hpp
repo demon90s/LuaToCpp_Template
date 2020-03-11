@@ -13,10 +13,12 @@
 #endif
 
 #define LUA_LOADLIB_COMMON "common"
+#define LUA_LOADLIB_OBJECT "object"
 
 extern "C"
 {
     CENGINE_LIB_API void luaopen_cengine(lua_State *L);
 
     CENGINE_LIB_API int luaopen_common(lua_State *L);
+    CENGINE_LIB_API int luaopen_object(lua_State *L);
 }
