@@ -9,6 +9,8 @@ function main()
     assert(obj:GetValue() == 0)
     obj:SetValue(42)
     assert(obj:GetValue() == 42)
+
+    obj:Free()
 end
 
 main()
