@@ -1,5 +1,6 @@
 #include "cengine.hpp"
 #include <cstring>
+#include <new>
 
 #define OBJECT_METATABLE "OBJECT_METATABLE"
 
@@ -8,8 +9,8 @@
 
 struct Object
 {
-    Object() = default;
-    int value = 0;
+    Object() : value(0) {}
+    int value;
 };
 
 extern "C"
